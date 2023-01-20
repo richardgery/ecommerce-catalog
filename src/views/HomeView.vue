@@ -1,14 +1,17 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <CardSection />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import CardSection from "@/components/CardSection.vue";
 
 export default {
   name: "HomeView",
-  components: {},
+  components: {
+    CardSection,
+  },
 };
 </script>
