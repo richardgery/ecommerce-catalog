@@ -32,8 +32,50 @@
                 ? 'color-rate-men'
                 : 'color-rate-women',
             ]"
-          ></div>
+          >
+            <!-- this tag used for call API from fakestoreapi through props for render rating-rate each product -->
+            <p class="rate">{{ products.rating.rate }}/5</p>
+            <!-- this tag used for call API from fakestoreapi through props for render each circle rating-rate color icon less or more than rating-rate  -->
+            <div
+              :class="[
+                Math.round(products.rating.rate) > 0
+                  ? 'circle bg-color'
+                  : 'circle',
+              ]"
+            ></div>
+            <div
+              :class="[
+                Math.round(products.rating.rate) > 1
+                  ? 'circle bg-color'
+                  : 'circle',
+              ]"
+            ></div>
+            <div
+              :class="[
+                Math.round(products.rating.rate) > 2
+                  ? 'circle bg-color'
+                  : 'circle',
+              ]"
+            ></div>
+            <div
+              :class="[
+                Math.round(products.rating.rate) > 3
+                  ? 'circle bg-color'
+                  : 'circle',
+              ]"
+            ></div>
+            <div
+              :class="[
+                Math.round(products.rating.rate) > 4
+                  ? 'circle bg-color'
+                  : 'circle',
+              ]"
+            ></div>
+          </div>
         </div>
+
+        <hr />
+        <p class="desk">{{ products.description }}</p>
       </div>
     </div>
   </div>
@@ -52,6 +94,6 @@ export default {
 </script>
 
 <!-- style tag for style web -->
-<style>
+<style scoped>
 @import "../assets/style/CardSection.css";
 </style>

@@ -61,7 +61,7 @@ h4 {
   line-height: 22px;
 }
 
-.product-category {
+.product-category .rate {
   color: #3f3f3f;
 }
 
@@ -70,8 +70,45 @@ h4 {
   justify-content: space-between;
   width: 160px;
 }
+
 .color-rate-women {
   display: flex;
   justify-content: space-between;
   width: 160px;
+}
+
+.color-rate-men .circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 1px solid #002772;
+}
+
+.color-rate-women .circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 1px solid #720060;
+}
+
+.color-rate-men .bg-color {
+  background-color: #002772;
+}
+
+.color-rate-women .bg-color {
+  background-color: #720060;
+}
+
+hr {
+  margin-bottom: 10px;
+}
+
+.desk {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  height: 300px;
+  color: #1e1e1e;
 }
