@@ -11,7 +11,7 @@
       </div>
       <!-- description each product section -->
       <div class="description">
-        <!-- heading tag used for data binding with call API from fakestoreapi for render title each product -->
+        <!-- heading tag used for data binding with call API from fakestoreapi through props for render title each product -->
         <h4
           :class="[
             products.category == 'men\'s clothing'
@@ -75,7 +75,43 @@
         </div>
 
         <hr />
+        <!-- each description products for category men or women clothes -->
         <p class="desk">{{ products.description }}</p>
+        <hr />
+        <!-- heading tag used for data binding with call API from fakestoreapi through props for render each price product -->
+        <h4
+          :class="[
+            products.category == 'men\'s clothing'
+              ? 'color-men'
+              : 'color-women',
+          ]"
+        >
+          ${{ products.price }}
+        </h4>
+        <!-- this tag used for render two buttons buy and next product section -->
+        <div class="button-group">
+          <!-- button tag used for data binding call API from fakestoreapi through props for render button color based on men or women product -->
+          <button
+            :class="[
+              products.category == 'men\'s clothing'
+                ? 'buy-clr-men'
+                : 'buy-clr-women',
+            ]"
+          >
+            Buy now
+          </button>
+          <!-- this tag used for data binding and even handling to call API from fakestoreapi through props for render men, women or unavailable card product -->
+          <button
+            :class="[
+              products.category == 'men\'s clothing'
+                ? 'next-clr-men'
+                : 'next-clr-women',
+            ]"
+            @click="increments"
+          >
+            Next product
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -84,10 +120,8 @@
 <!-- script tag for interactive ecommerce web vue project -->
 <script>
 export default {
+  // name component for export file
   name: "CardSection",
-  data() {
-    return {};
-  },
   // props declaration for communicates between parent and child components
   props: ["products", "increments"],
 };
