@@ -127,7 +127,8 @@ export default {
 };
 </script>
 
-<!-- style tag for style web -->
+<!-- style tag for style web and attribute scoped used for apply to elements of the current component only-->
 <style scoped>
+/* import file from name folder style  */
 @import "../assets/style/CardSection.css";
 </style>
