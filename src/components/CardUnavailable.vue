@@ -7,7 +7,7 @@
       <!-- p tag used for render description unvailable product except men or women category product -->
       <p class="desc-unavailable">This product is unavailable to show</p>
       <!-- button tag used for even handling with v-on directive attribute while click, renders each card products -->
-      <button class="button-unavailable" @click="increments">
+      <button class="button-unavailable" @click="increment">
         Next product
       </button>
       <!-- this tag used to parent image background unavailable product section -->
@@ -29,7 +29,7 @@ export default {
     };
   },
   // props declaration for communicates between parent and child components
-  props: ["increments"],
+  props: ["increment"],
 };
 </script>
 
