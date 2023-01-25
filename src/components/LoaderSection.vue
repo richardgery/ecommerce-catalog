@@ -3,7 +3,16 @@
   <!-- div tag used for parent load spinner css section -->
   <div class="container-load">
     <!-- this tag render load spinner css -->
-    <div class="loader"></div>
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </template>
 

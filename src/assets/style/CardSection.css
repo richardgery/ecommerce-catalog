@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 .container {
   display: flex;
@@ -20,8 +20,8 @@
 
 img {
   max-width: 400px;
-  max-height: 600px;
-  margin-left: 30px;
+  max-height: 490px;
+  margin: 40px;
 }
 
 .description {
@@ -115,13 +115,18 @@ hr {
 
 .button-group {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+button {
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .buy-clr-men {
   border: none;
   box-sizing: border-box;
-  width: 259px;
+  width: 249px;
   height: 42px;
   color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -136,7 +141,7 @@ hr {
 .buy-clr-women {
   border: none;
   box-sizing: border-box;
-  width: 259px;
+  width: 249px;
   height: 42px;
   color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -150,8 +155,8 @@ hr {
 
 .next-clr-men {
   box-sizing: border-box;
-  width: 239px;
-  height: 32px;
+  width: 249px;
+  height: 42px;
   color: #002772;
   background: transparent;
   font-family: "Inter", sans-serif;
@@ -160,13 +165,23 @@ hr {
   font-size: 20px;
   line-height: 24px;
   border-radius: 4px;
-  border: 1px solid #002772;
+  border: 3px solid #002772;
+}
+
+.next-clr-men:hover {
+  background-color: #002772;
+  color: #ffffff;
+}
+
+.next-clr-men:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 .next-clr-women {
   box-sizing: border-box;
-  width: 239px;
-  height: 32px;
+  width: 249px;
+  height: 42px;
   color: #720060;
   background: transparent;
   font-family: "Inter", sans-serif;
@@ -175,5 +190,15 @@ hr {
   font-size: 20px;
   line-height: 24px;
   border-radius: 4px;
-  border: 1px solid #720060;
+  border: 3px solid #720060;
+}
+
+.next-clr-women:hover {
+  background-color: #720060;
+  color: #ffffff;
+}
+
+.next-clr-women:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }

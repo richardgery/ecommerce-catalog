@@ -21,7 +21,7 @@
     <!-- this tag use conditional rendering for background pattern each men, women, unavailable product -->
     <div class="bg-pattern-men" v-if="category == 0"></div>
     <div class="bg-pattern-women" v-else-if="category === 1"></div>
-    <div class="bg=pattern-unavailable" v-else></div>
+    <div class="bg-pattern-unavailable" v-else></div>
   </div>
 </template>
 
@@ -88,7 +88,7 @@ export default {
         this.set(response.data);
         this.load = false;
       })
-      .catch((error) => console.log("Gagal : ", error));
+      .catch((error) => console.log("Failed : ", error));
   },
   // watch property used to do something in reaction to a particular data change
   watch: {
@@ -113,7 +113,7 @@ export default {
             this.set(response.data);
             this.load = false;
           })
-          .catch((error) => console.log("Gagal : ", error));
+          .catch((error) => console.log("Failed : ", error));
       }
     },
   },

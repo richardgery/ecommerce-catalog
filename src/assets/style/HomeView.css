@@ -1,8 +1,6 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 
@@ -20,7 +18,7 @@
   background-image: url(../Bg-Pattern.svg);
   background-color: #d6e6ff;
   width: 100%;
-  height: 548px;
+  height: 65%;
   margin: 0;
   position: absolute;
   z-index: 0;
@@ -30,17 +28,16 @@
   background-image: url(../Bg-Pattern.svg);
   background-color: #fde2ff;
   width: 100%;
-  height: 548px;
+  height: 65%;
   margin: 0;
   position: absolute;
   z-index: 0;
 }
 
 .bg-pattern-unavailable {
-  background-image: url(../Bg-Pattern.svg);
   background-color: #d8d7d7;
   width: 100%;
-  height: 548px;
+  height: 65%;
   margin: 0;
   position: absolute;
   z-index: 0;
